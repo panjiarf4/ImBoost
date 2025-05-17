@@ -4,6 +4,15 @@
 
 ![image](https://github.com/user-attachments/assets/d005fd7c-29a8-4f93-9476-6791a370d17c)
 </div>
+<p align="center">
+  <a href="#-pendahuluan">Pendahuluani</a> •
+  <a href="#-tujuan penelitian">Tujuan Penelitian</a> •
+  <a href="#-metode penelitian">Metode Penelitian</a> •
+  <a href="#-ppt">PPT</a> •
+  <a href="#-data-scrapping">Data Scrapping</a> •
+  <a href="#-struktur-folder">Struktur Folder</a> •
+  <a href="#-team">Team</a> 
+</p>
 
 ## 📝 Pendahuluan
 
