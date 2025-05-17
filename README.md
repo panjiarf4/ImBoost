@@ -1,9 +1,9 @@
 <div align="center"> 
 
 # Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Sosial Ekonomi untuk Pemetaan kesejahteraan Masyarakarat
-</div>
 
 ![image](https://github.com/user-attachments/assets/d005fd7c-29a8-4f93-9476-6791a370d17c)
+</div>
 
 ## 📝 Pendahuluan
 
