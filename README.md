@@ -11,6 +11,17 @@
   <a href="#-dataset">Dataset</a> •
 </p>
 
+## 📖 Daftar Isi
+- [Pendahuluan](#pendahuluan)
+- [Tujuan Penelitian](#tujuan-penelitian)
+- [Metode Penelitian](#metode-penelitian)
+- [Sumber Data](#sumber-data)
+- [Langkah Analisis](#langkah-analisis)
+- [Visualisasi](#visualisasi)
+- [Hasil dan Interpretasi](#hasil-dan-interpretasi)
+- [Kesimpulan](#kesimpulan)
+- [Referensi](#referensi)
+
 ## 📝 Pendahuluan
 
 <div align="justify">
@@ -23,3 +34,4 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
   
 - Memberikan rekomendasi kebijakan berbasis data untuk membantu pemerintah dalam penyusunan prioritas pembangunan dan distribusi anggaran.
 </div>
+
