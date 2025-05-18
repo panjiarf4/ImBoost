@@ -12,15 +12,15 @@
 </p>
 
 ## 📖 Daftar Isi
-- [Pendahuluan](#pendahuluan)
-- [Tujuan Penelitian](#tujuan-penelitian)
-- [Metode Penelitian](#metode-penelitian)
-- [Sumber Data](#sumber-data)
-- [Langkah Analisis](#langkah-analisis)
-- [Visualisasi](#visualisasi)
-- [Hasil dan Interpretasi](#hasil-dan-interpretasi)
-- [Kesimpulan](#kesimpulan)
-- [Referensi](#referensi)
+<a href="#pendahuluan">Pendahuluan</a><br>
+<a href="#tujuan-penelitian">Tujuan Penelitian</a><br>
+<a href="#metode-penelitian">Metode Penelitian</a><br>
+<a href="#sumber-data">Sumber Data</a><br>
+<a href="#langkah-analisis">Langkah Analisis</a><br>
+<a href="#visualisasi">Visualisasi</a><br>
+<a href="#hasil-dan-interpretasi">Hasil dan Interpretasi</a><br>
+<a href="#kesimpulan">Kesimpulan</a><br>
+<a href="#referensi">Referensi</a>
 
 ## 📝 Pendahuluan
 
