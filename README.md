@@ -30,40 +30,31 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
 </div>
 
 ## ✏️ Metode Penelitian
+Metode penelitian yang digunakan adalah sebagai beikut:
+
 
 ## 🔗 Data Dan Sumber Data 
-**1. KAB_KOTA <br>**
-   Nama Kabupaten atau Kota yang ada diseluruh Indonesia.
-   
-**2. IPM (Indeks Pembangunan Manusia) <br>**
-   Mengukur kualitas hidup manusia berbasis berbasis tiga dimensi: umur panjang dan sehat, pengetahuan, dan standar hidup layak.
-   
-**3. Anggaran <br>**
-   Jumlah alokasi anggaran (kemungkinan APBD/APBN) dalam satuan rupiah.
-   
-**4. IPG (Indeks Pembangunan Gender) <br>**
-   Menggambarkan kesetaraan gender dalam IPM.
-   
-**5. PKKP (Prevalensi Ketidakcukupan Konsumsi Pangan) <br>**
-   Persentase penduduk dengan konsumsi pangan kurang dari kebutuhan minimal.
-   
-**6. PPM (Persentase Penduduk Miskin) <br>**
-   Persentas penduduk dengan pendapatan di bawa garis kemiskinan.
-   
-**7. PPK (Pengeluaran Per Kapita) <br>**
-   Jumlah pengeluaran rata-rata individu.
-   
-**8. Air Layak <br>**
-   Persentase rumah tangga yang mengakses air minum layak.
-   
-**9. IKK (Indeks Kemahalan Kontruksi) <br>**
-   Nilai tambah barang dan jasa yang dihasilkan di wilayah tersebut.
-   
-**10. PDRB (Produk Domestik Regional Bruto) <br>**
-   Nilai tambah barang dan jasa yang dihasilkan di wilayah tersbut.
+**1. KAB_KOTA**: Nama Kabupaten atau Kota yang ada diseluruh Indonesia.
 
-**Sumber: Satu Data Indonesia, dan BPS (Badan Pusat Statistik).**
+**2. IPM (Indeks Pembangunan Manusia)**: Mengukur kualitas hidup manusia berbasis berbasis tiga dimensi: umur panjang dan sehat, pengetahuan, dan standar hidup layak.
 
+**3. Anggaran**: Jumlah alokasi anggaran (kemungkinan APBD/APBN) dalam satuan rupiah.
+
+**4. IPG (Indeks Pembangunan Gender)**: Menggambarkan kesetaraan gender dalam IPM.
+
+**5. PKKP (Prevalensi Ketidakcukupan Konsumsi Pangan)**: Persentase penduduk dengan konsumsi pangan kurang dari kebutuhan minimal.
+
+**6. PPM (Persentase Penduduk Miskin)**: Persentas penduduk dengan pendapatan di bawa garis kemiskinan.
+
+**7. PPK (Pengeluaran Per Kapita)**: Jumlah pengeluaran rata-rata individu.
+
+**8. Air Layak**: Persentase rumah tangga yang mengakses air minum layak.
+
+**9. IKK (Indeks Kemahalan Kontruksi)**: Nilai tambah barang dan jasa yang dihasilkan di wilayah tersebut.
+
+**10. PDRB (Produk Domestik Regional Bruto)**: Nilai tambah barang dan jasa yang dihasilkan di wilayah tersbut.
+
+**Sumber**: Satu Data Indonesia, dan BPS (Badan Pusat Statistik).
 
 ## 📋 Langkah Analisis
 
