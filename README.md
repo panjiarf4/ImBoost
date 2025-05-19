@@ -31,7 +31,8 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
 
 ## ✏️ Metode Penelitian
 Metode penelitian yang digunakan adalah sebagai beikut:
-
+**1. XGBoost**
+</div>
 
 ## 🔗 Data Dan Sumber Data 
 **1. KAB_KOTA**: Nama Kabupaten atau Kota yang ada diseluruh Indonesia.
@@ -55,15 +56,25 @@ Metode penelitian yang digunakan adalah sebagai beikut:
 **10. PDRB (Produk Domestik Regional Bruto)**: Nilai tambah barang dan jasa yang dihasilkan di wilayah tersbut.
 
 **Sumber**: Satu Data Indonesia, dan BPS (Badan Pusat Statistik).
+</div>
 
 ## 📋 Langkah Analisis
-
-## 📊 Visualisasi
+**- **
+</div>
 
 ## ✅ Hasil dan Interpretasi
+</div>
 
 ## ⭕ Kesimpulan
+</div>
 
 ## 📚 Referensi
+</div>
+
+
+
+
+
+
 
 
