@@ -31,16 +31,16 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
 
 ## ✏️ Metode Penelitian
 
-## 📊 Sumber Data
+## 🔗 Sumber Data
 
 ## 📋 Langkah Analisis
 
-## Visualisasi
+## 📊 Visualisasi
 
-## Hasil dan Interpretasi
+## ✅ Hasil dan Interpretasi
 
-## Kesimpulan
+## ⭕ Kesimpulan
 
-## Referensi'
+## 📚 Referensi'
 
 
