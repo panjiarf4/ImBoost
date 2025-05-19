@@ -29,3 +29,18 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
 - Memberikan rekomendasi kebijakan berbasis data untuk membantu pemerintah dalam penyusunan prioritas pembangunan dan distribusi anggaran.
 </div>
 
+## ✏️ Metode Penelitian
+
+## 📊 Sumber Data
+
+## 📋 Langkah Analisis
+
+## Visualisasi
+
+## Hasil dan Interpretasi
+
+## Kesimpulan
+
+## Referensi'
+
+
