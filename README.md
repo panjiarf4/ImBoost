@@ -4,12 +4,6 @@
 
 ![image](https://github.com/user-attachments/assets/d005fd7c-29a8-4f93-9476-6791a370d17c)
 </div>
-<p align="center">
-  <a href="#-pendahuluan">Pendahuluan</a> •
-  <a href="#-tujuan penelitian">Tujuan Penelitian</a> •
-  <a href="#-metode penelitian">Metode Penelitian</a> •
-  <a href="#-dataset">Dataset</a> •
-</p>
 
 ## 📖 Daftar Isi
 <a href="#pendahuluan">Pendahuluan</a><br>
