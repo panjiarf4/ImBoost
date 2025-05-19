@@ -2,7 +2,9 @@
 
 # Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Sosial Ekonomi untuk Pemetaan kesejahteraan Masyarakarat
 
-![image](https://github.com/user-attachments/assets/d005fd7c-29a8-4f93-9476-6791a370d17c)
+![image](https://github.com/user-attachments/assets/402fbd88-ef97-4a44-a675-9b83ce6f2c4e)
+
+
 </div>
 
 ## 📖 Daftar Isi
