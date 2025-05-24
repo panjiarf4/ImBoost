@@ -33,7 +33,10 @@ Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indones
 
 ## ✏️ Metode Penelitian
 Metode penelitian yang digunakan adalah sebagai beikut:
-**1. XGBoost**
+
+**1. XGBoost**: Teknik ensembel boosting pohon keputusan yang dikenal efisien dan memiliki performa tinggi pada tugas klasifikasi.
+
+
 </div>
 
 ## 🔗 Data Dan Sumber Data 
@@ -61,7 +64,17 @@ Metode penelitian yang digunakan adalah sebagai beikut:
 </div>
 
 ## 📋 Langkah Analisis
-**- **
+1. Pengumpulan Data: Data sekunder IPM kabupaten/kota dan variabel pendukung (alokasi anggaran, PDRB, pengeluaran per kapita, tingkat kemiskinan, akses air bersih, IPG, IKK, dll.) dikumpulkan dari sumber resmi (BPS, Portal Satu Data Indonesia).
+2. Pra-pemrosesan Data: Lakukan pembersihan data (mengatasi nilai hilang dan outlier), transformasi skala (misalnya normalisasi atau log-transformasi), dan encoding variabel kategorikal agar dataset siap untuk pemodelan.
+3. Penentuan Label Target: Ubah nilai IPM setiap daerah menjadi kelas kategorikal sesuai ketentuan BPS.
+   - IPM Rendah: <60
+   - IPM Sedang: 60–<70
+   - IPM Tinggi: 70–<80
+   - IPM Sangat tinggi: ≥80)
+5. Pembagian Data: Bagi dataset menjadi set pelatihan dan pengujian, misalnya menggunakan validasi silang k-fold (10 lipatan, rasio 90% data latih : 10% data uji) untuk menjaga kemampuan generalisasi model.
+6. Pelatihan Model XGBoost: Bangun model klasifikasi XGBoost dengan objective multiclass (softmax), kemudian latih model tersebut pada data pelatihan. Lakukan tuning hyperparameter (jumlah pohon, kedalaman, laju pembelajaran, dan regularisasi L1/L2) berdasarkan hasil validasi silang untuk mendapatkan performa optimal.
+7. Evaluasi Model: Ukur kinerja model menggunakan matriks kebingungan untuk menghitung akurasi, presisi, recall, dan/atau F1-score per kelas IPM. Bandingkan hasil model pada data latih dan validasi untuk memastikan tidak terjadi overfitting.
+8. Interpretasi dan Rekomendasi Kebijakan: Analisis fitur penting (feature importance) dari model untuk menentukan variabel yang paling berpengaruh terhadap klasifikasi IPM. Gunakan hasil klasifikasi dan variabel kunci ini untuk merumuskan rekomendasi intervensi dan kebijakan pembangunan berbasis data 
 </div>
 
 ## ✅ Hasil dan Interpretasi
