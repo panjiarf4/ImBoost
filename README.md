@@ -23,7 +23,12 @@
 ## 📝 Pendahuluan
 
 <div align="justify">
-Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indonesia sebagaimana tertuang dalam Rencana Pembangunan Jangka Menengah Nasioanal (RPJMN) 2025-2029 sebagai langkah strategis untuk mewujudkan visi Indonesia emas 2045. Pemerintah Indonesia menargetkan pada tahun 2024, Indonesia tidak hanya menjadi negara berpendapatan tinggi, tetapi juga memiliki masyarakat yang sejatera, adil, dan merata dalam pembangunan ekonomi nasional (Bappenas, 2024)
+   
+Pemerintah Indonesia menargetkan tercapainya masyarakat yang sejahtera, adil, dan merata melalui Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029 dalam rangka mewujudkan Visi Indonesia Emas 2045. Namun, capaian kesejahteraan masyarakat yang diukur melalui Indeks Pembangunan Manusia (IPM) masih menunjukkan ketimpangan antardaerah, di mana wilayah seperti Yogyakarta mencatat IPM sangat tinggi, sementara daerah seperti Kabupaten Nduga sangat rendah (BPS, 2024; World Bank, 2020).
+
+Ketimpangan ini tidak selalu berkorelasi dengan besarnya anggaran yang dialokasikan, tetapi lebih terkait dengan efektivitas tata kelola dan pemanfaatan anggaran. Oleh karena itu, penelitian ini bertujuan untuk memetakan tingkat kesejahteraan wilayah kabupaten/kota di Indonesia menggunakan pendekatan machine learning, khususnya algoritma XGBoost, berdasarkan indikator sosial ekonomi seperti IPM, pengeluaran per kapita, akses air layak, PDRB, dan lainnya.
+
+Hasil klasifikasi diharapkan dapat mengidentifikasi daerah yang efektif dalam memanfaatkan anggaran serta memberikan rekomendasi intervensi kebijakan yang lebih tepat sasaran untuk mendukung pembangunan berkelanjutan menuju Indonesia Emas 2045.
 
 ## 🎯 Tujuan Penelitian
 
