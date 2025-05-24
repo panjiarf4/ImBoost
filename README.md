@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Ekonomi Sosial untuk Pemetaan kesejahteraan Masyarakarat
+# Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Ekonomi Sosial untuk Pemetaan Kesejahteraan Masyarakarat
 
 ![image](https://github.com/user-attachments/assets/402fbd88-ef97-4a44-a675-9b83ce6f2c4e)
 
@@ -89,7 +89,7 @@ Data dan Variabel yang digunakan dalam penelitian ini sebagai berikut.
 - **Evaluasi Model:** Hitung akurasi, precision, recall, dan F1-score berdasarkan data uji.
 - **Interpretasi & Rekomendasi:** Gunakan feature importance untuk mengidentifikasi variabel kunci, serta rumuskan rekomendasi kebijakan berbasis data.
 
-## 🌟 Visualisasi
+## 🌟 Eksplorasi Dataset
 
 ### 1. Distribusi IPM 2024
 
@@ -112,7 +112,7 @@ Visualisasi heatmap memperlihatkan korelasi antar fitur numerik. Terlihat bahwa 
 
 
 
-## 📊 Hasil dan Interpretasi
+## 📊 Hasil dan Pembahasan
 
 Model **XGBoost** menunjukkan performa terbaik dengan akurasi 88% dan macro F1-score sebesar 0.87, serta mampu mengklasifikasikan kelas mayoritas dan minoritas secara seimbang. Model ini sangat andal dalam mendeteksi kategori *Kesejahteraan Sedang* (kelas 1) dengan recall 0.99 dan F1-score tinggi pada semua kelas.
 
