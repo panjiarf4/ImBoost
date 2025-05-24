@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Sosial Ekonomi untuk Pemetaan kesejahteraan Masyarakarat
+# Analisis Klasifikasi Daerah Indonesia Berdasarkan Anggaran Negara dan Indikator Ekonomi Sosial untuk Pemetaan kesejahteraan Masyarakarat
 
 ![image](https://github.com/user-attachments/assets/402fbd88-ef97-4a44-a675-9b83ce6f2c4e)
 
@@ -56,6 +56,7 @@ Metode penelitian yang digunakan adalah sebagai berikut:
 
 ## 🗂️ Data dan Sumber Data
 
+Data dan Variabel yang digunakan dalam penelitian ini sebagai berikut.
 <div align="center">
 
 | No. | Variabel | Deskripsi |
