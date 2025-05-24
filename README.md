@@ -30,6 +30,7 @@ Ketimpangan ini tidak selalu berkorelasi dengan besarnya anggaran yang dialokasi
 
 Hasil klasifikasi diharapkan dapat mengidentifikasi daerah yang efektif dalam memanfaatkan anggaran serta memberikan rekomendasi intervensi kebijakan yang lebih tepat sasaran untuk mendukung pembangunan berkelanjutan menuju Indonesia Emas 2045.
 
+
 ## 🎯 Tujuan Penelitian
 
 - Membangun model klasifikasi daerah berdasarkan tingkat kesejahteraan menggunakan berbagai metode machine learning.
@@ -87,21 +88,26 @@ Metode penelitian yang digunakan adalah sebagai berikut:
 - **Evaluasi Model:** Hitung akurasi, precision, recall, dan F1-score berdasarkan data uji.
 - **Interpretasi & Rekomendasi:** Gunakan feature importance untuk mengidentifikasi variabel kunci, serta rumuskan rekomendasi kebijakan berbasis data.
 
-## ⭐ Visualisasi
+## 🌟 Visualisasi
 
 ### 1. Distribusi IPM 2024
 
-![image](https://github.com/user-attachments/assets/8a5d0e38-105c-45f4-bc88-c9a6b7d61b66)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8a5d0e38-105c-45f4-bc88-c9a6b7d61b66" alt="Distribusi IPM" width="600"/>
+</p>
 
-Histogram di atas menunjukkan sebaran nilai Indeks Pembangunan Manusia (IPM) pada tahun 2024. Sebagian besar wilayah berada pada kisaran IPM antara 65–75, dengan distribusi condong ke kanan, mengindikasikan masih adanya daerah dengan IPM rendah.
+Histogram di atas menunjukkan sebaran nilai Indeks Pembangunan Manusia (IPM) pada tahun 2024. Sebagian besar wilayah berada dalam kisaran IPM antara 65–75, dengan distribusi condong ke kanan, mengindikasikan masih adanya daerah dengan IPM rendah.
 
----
+----
 
 ### 2. Korelasi Antar Fitur Numerik
 
-![image](https://github.com/user-attachments/assets/314741cd-e370-46da-9ed4-f433a45ad937)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/314741cd-e370-46da-9ed4-f433a45ad937" alt="Heatmap Korelasi" width="600"/>
+</p>
 
-Visualisasi heatmap memperlihatkan korelasi antar fitur numerik. Terlihat bahwa variabel seperti **PPK (Pengeluaran Per Kapita)** dan **Bekerja_Formal** memiliki korelasi positif tinggi dengan IPM, sedangkan **PPM (Persentase Penduduk Miskin)** dan **Bekerja_Informal** berkorelasi negatif. Pola ini menegaskan pentingnya indikator ekonomi dan pekerjaan terhadap kesejahteraan wilayah.
+Visualisasi heatmap memperlihatkan korelasi antar fitur numerik. Terlihat bahwa variabel seperti **PPK** dan **Bekerja_Formal** memiliki korelasi positif tinggi dengan IPM, sedangkan **PPM** (*Persentase Penduduk Miskin*) dan **Bekerja_Informal** berkorelasi negatif. Pola ini menegaskan pentingnya indikator ekonomi dan pekerjaan formal dalam meningkatkan kesejahteraan wilayah.
+
 
 
 
