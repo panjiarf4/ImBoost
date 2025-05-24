@@ -39,46 +39,62 @@ Metode penelitian yang digunakan adalah sebagai beikut:
 
 </div>
 
-## 🔗 Data Dan Sumber Data 
-**1. KAB_KOTA**: Nama Kabupaten atau Kota yang ada diseluruh Indonesia.
+## 🗂️ Data dan Sumber Data
 
-**2. IPM (Indeks Pembangunan Manusia)**: Mengukur kualitas hidup manusia berbasis berbasis tiga dimensi: umur panjang dan sehat, pengetahuan, dan standar hidup layak.
+<div align="center">
 
-**3. Anggaran**: Jumlah alokasi anggaran (kemungkinan APBD/APBN) dalam satuan rupiah.
+| No. | Variabel | Deskripsi |
+|-----|----------|-----------|
+| 1.  | **KAB_KOTA** | Nama Kabupaten atau Kota di seluruh Indonesia. |
+| 2.  | **IPM** (*Indeks Pembangunan Manusia*) | Mengukur kualitas hidup berdasarkan umur panjang, kesehatan, pendidikan, dan standar hidup layak. |
+| 3.  | **Anggaran** | Jumlah alokasi anggaran (kemungkinan dari APBD/APBN) dalam satuan rupiah. |
+| 4.  | **IPG** (*Indeks Pembangunan Gender*) | Menggambarkan kesetaraan gender dalam pembangunan manusia. |
+| 5.  | **PKKP** (*Prevalensi Ketidakcukupan Konsumsi Pangan*) | Persentase penduduk yang mengonsumsi pangan kurang dari kebutuhan minimal. |
+| 6.  | **PPM** (*Persentase Penduduk Miskin*) | Penduduk dengan pendapatan di bawah garis kemiskinan. |
+| 7.  | **PPK** (*Pengeluaran Per Kapita*) | Jumlah pengeluaran rata-rata individu. |
+| 8.  | **Air Layak** | Persentase rumah tangga yang mengakses air minum layak. |
+| 9.  | **IKK** (*Indeks Kemahalan Konstruksi*) | Nilai tambah barang/jasa dari konstruksi di suatu wilayah. |
+| 10. | **PDRB** (*Produk Domestik Regional Bruto*) | Nilai tambah barang dan jasa yang dihasilkan di suatu daerah. |
 
-**4. IPG (Indeks Pembangunan Gender)**: Menggambarkan kesetaraan gender dalam IPM.
-
-**5. PKKP (Prevalensi Ketidakcukupan Konsumsi Pangan)**: Persentase penduduk dengan konsumsi pangan kurang dari kebutuhan minimal.
-
-**6. PPM (Persentase Penduduk Miskin)**: Persentas penduduk dengan pendapatan di bawa garis kemiskinan.
-
-**7. PPK (Pengeluaran Per Kapita)**: Jumlah pengeluaran rata-rata individu.
-
-**8. Air Layak**: Persentase rumah tangga yang mengakses air minum layak.
-
-**9. IKK (Indeks Kemahalan Kontruksi)**: Nilai tambah barang dan jasa yang dihasilkan di wilayah tersebut.
-
-**10. PDRB (Produk Domestik Regional Bruto)**: Nilai tambah barang dan jasa yang dihasilkan di wilayah tersbut.
-
-**Sumber**: Satu Data Indonesia, dan BPS (Badan Pusat Statistik).
 </div>
 
-## 📋 Langkah Analisis
-1. Pengumpulan Data: Data sekunder IPM kabupaten/kota dan variabel pendukung (alokasi anggaran, PDRB, pengeluaran per kapita, tingkat kemiskinan, akses air bersih, IPG, IKK, dll.) dikumpulkan dari sumber resmi (BPS, Portal Satu Data Indonesia).
-2. Pra-pemrosesan Data: Lakukan pembersihan data (mengatasi nilai hilang dan outlier), transformasi skala (misalnya normalisasi atau log-transformasi), dan encoding variabel kategorikal agar dataset siap untuk pemodelan.
-3. Penentuan Label Target: Ubah nilai IPM setiap daerah menjadi kelas kategorikal sesuai ketentuan BPS.
-   - IPM Rendah: <60
-   - IPM Sedang: 60–<70
-   - IPM Tinggi: 70–<80
-   - IPM Sangat tinggi: ≥80)
-5. Pembagian Data: Bagi dataset menjadi set pelatihan dan pengujian, misalnya menggunakan validasi silang k-fold (10 lipatan, rasio 90% data latih : 10% data uji) untuk menjaga kemampuan generalisasi model.
-6. Pelatihan Model XGBoost: Bangun model klasifikasi XGBoost dengan objective multiclass (softmax), kemudian latih model tersebut pada data pelatihan. Lakukan tuning hyperparameter (jumlah pohon, kedalaman, laju pembelajaran, dan regularisasi L1/L2) berdasarkan hasil validasi silang untuk mendapatkan performa optimal.
-7. Evaluasi Model: Ukur kinerja model menggunakan matriks kebingungan untuk menghitung akurasi, presisi, recall, dan/atau F1-score per kelas IPM. Bandingkan hasil model pada data latih dan validasi untuk memastikan tidak terjadi overfitting.
-8. Interpretasi dan Rekomendasi Kebijakan: Analisis fitur penting (feature importance) dari model untuk menentukan variabel yang paling berpengaruh terhadap klasifikasi IPM. Gunakan hasil klasifikasi dan variabel kunci ini untuk merumuskan rekomendasi intervensi dan kebijakan pembangunan berbasis data 
+📌 **Sumber Data:**
+- [Satu Data Indonesia](https://satudata.go.id)
+- [Badan Pusat Statistik (BPS)](https://www.bps.go.id)
+
+
+## 🔍 Langkah Analisis
+
+- **Pengumpulan Data:** Kumpulkan data sekunder IPM kabupaten/kota beserta variabel pendukung (alokasi anggaran, PDRB, pengeluaran per kapita, kemiskinan, akses air bersih, dll.) dari sumber resmi seperti BPS.
+- **Pra-pemrosesan:** Bersihkan data (atasi nilai hilang dan outlier), lakukan transformasi skala (normalisasi/standarisasi), dan encoding variabel kategorikal.
+- **Penentuan Label Target:** Ubah nilai IPM menjadi kelas (rendah, sedang, tinggi, sangat tinggi) berdasarkan klasifikasi BPS.
+- **Pembagian Data:** Split data menjadi data latih dan uji (misalnya dengan validasi silang k-fold, contoh: 90% latih, 10% uji).
+- **Pelatihan Model (XGBoost):** Bangun model klasifikasi menggunakan XGBoost multiclass. Lakukan tuning hyperparameter menggunakan validasi silang.
+- **Evaluasi Model:** Hitung akurasi, precision, recall, dan F1-score berdasarkan data uji.
+- **Interpretasi & Rekomendasi:** Gunakan feature importance untuk mengidentifikasi variabel kunci, serta rumuskan rekomendasi kebijakan berbasis data.
+
+## 📊 Hasil dan Pembahasan
+
+Model **XGBoost** menunjukkan performa terbaik dengan akurasi 88% dan macro F1-score sebesar 0.87, serta mampu mengklasifikasikan kelas mayoritas dan minoritas secara seimbang. Model ini sangat andal dalam mendeteksi kategori *Kesejahteraan Sedang* (kelas 1) dengan recall 0.99 dan F1-score tinggi pada semua kelas.
+
+Sebaliknya, **SVM** dan **Naive Bayes** menunjukkan kecenderungan bias terhadap kelas mayoritas. Meskipun recall kelas Sedang cukup tinggi, performa pada kelas *Rendah* dan *Tinggi* jauh lebih rendah, menghasilkan macro F1-score hanya sebesar 0.44.
+
+Model **Regresi Logistik** memiliki akurasi dan F1-score terendah (masing-masing 60% dan 0.34), menunjukkan bahwa model ini tidak cocok untuk data ketidakseimbangan kelas seperti pada klasifikasi kesejahteraan wilayah.
+
+#### Tabel Perbandingan antar Model
+
+<div align="center">
+
+| **Model**            | **Akurasi** | **Macro F1** | **Keterangan**                                    |
+|----------------------|-------------|--------------|--------------------------------------------------|
+| XGBoost              | 0.88        | 0.87         | Performa terbaik dan seimbang antar kelas.       |
+| SVM                  | 0.70        | 0.44         | Bias terhadap kelas mayoritas.                   |
+| Naive Bayes          | 0.69        | 0.44         | Rentan terhadap kelas minoritas.                 |
+| Regresi Logistik     | 0.60        | 0.34         | Tidak cocok untuk data tidak seimbang.           |
+
 </div>
 
-## ✅ Hasil dan Interpretasi
-</div>
+Berdasarkan hasil perbandingan, dapat disimpulkan bahwa **XGBoost** merupakan algoritma yang paling efektif dalam memodelkan klasifikasi tingkat kesejahteraan wilayah berbasis indikator sosial ekonomi. Keunggulan utamanya terletak pada kemampuannya menangani **kompleksitas antar variabel**, **ketidakseimbangan distribusi data**, serta menghasilkan prediksi **multikelas yang presisi dan stabil**.
 
 ## ⭕ Kesimpulan
 </div>
