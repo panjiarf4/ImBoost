@@ -8,36 +8,45 @@
 </div>
 
 ## 📖 Daftar Isi
-<a href="#pendahuluan">Pendahuluan</a><br>
-<a href="#tujuan-penelitian">Tujuan Penelitian</a><br>
-<a href="#metode-penelitian">Metode Penelitian</a><br>
-<a href="#sumber-data">Sumber Data</a><br>
-<a href="#langkah-analisis">Langkah Analisis</a><br>
-<a href="#visualisasi">Visualisasi</a><br>
-<a href="#hasil-dan-interpretasi">Hasil dan Interpretasi</a><br>
-<a href="#kesimpulan">Kesimpulan</a><br>
-<a href="#referensi">Referensi</a>
+
+- [Pendahuluan](#pendahuluan)
+- [Tujuan Penelitian](#tujuan-penelitian)
+- [Metode Penelitian](#metode-penelitian)
+- [Data dan Sumber Data](#data-dan-sumber-data)
+- [Langkah Analisis](#langkah-analisis)
+- [Visualisasi](#visualisasi)
+- [Hasil dan Interpretasi](#hasil-dan-interpretasi)
+- [Kesimpulan](#kesimpulan)
+- [Referensi](#referensi)
+
 
 ## 📝 Pendahuluan
 
 <div align="justify">
 Kesejahteraan masyarakat Indonesia merupakan tujuan pembangunan nasional Indonesia sebagaimana tertuang dalam Rencana Pembangunan Jangka Menengah Nasioanal (RPJMN) 2025-2029 sebagai langkah strategis untuk mewujudkan visi Indonesia emas 2045. Pemerintah Indonesia menargetkan pada tahun 2024, Indonesia tidak hanya menjadi negara berpendapatan tinggi, tetapi juga memiliki masyarakat yang sejatera, adil, dan merata dalam pembangunan ekonomi nasional (Bappenas, 2024)
 
-## 👨‍💻 Tujuan Penelitian 
+## 🎯 Tujuan Penelitian
+
 - Membangun model klasifikasi daerah berdasarkan tingkat kesejahteraan menggunakan berbagai metode machine learning.
-  
 - Mengevaluasi performa model machine learning dalam mengklasifikasikan kesejahteraan daerah untuk menentukan metode yang paling efektif.
-  
 - Memberikan rekomendasi kebijakan berbasis data untuk membantu pemerintah dalam penyusunan prioritas pembangunan dan distribusi anggaran.
-</div>
 
-## ✏️ Metode Penelitian
-Metode penelitian yang digunakan adalah sebagai beikut:
+## 📝 Metode Penelitian
 
-**1. XGBoost**: Teknik ensembel boosting pohon keputusan yang dikenal efisien dan memiliki performa tinggi pada tugas klasifikasi.
+Metode penelitian yang digunakan adalah sebagai berikut:
 
+1. **XGBoost**  
+   Teknik ensembel boosting berbasis pohon keputusan yang dikenal efisien dan memiliki performa tinggi dalam tugas klasifikasi, terutama untuk data yang tidak seimbang.
 
-</div>
+2. **Support Vector Machine (SVM)**  
+   Algoritma klasifikasi yang bekerja dengan mencari hyperplane terbaik untuk memisahkan kelas data. Cocok untuk data berdimensi tinggi namun sensitif terhadap ketidakseimbangan kelas.
+
+3. **Naive Bayes**  
+   Model klasifikasi berbasis probabilistik yang mengasumsikan independensi antar fitur. Meskipun sederhana dan cepat, performanya dapat menurun pada data kompleks atau tidak seimbang.
+
+4. **Regresi Logistik**  
+   Model statistik klasik untuk klasifikasi biner atau multikelas yang mengestimasi probabilitas berdasarkan fungsi logistik. Umumnya kurang optimal pada data multikelas yang tidak seimbang.
+
 
 ## 🗂️ Data dan Sumber Data
 
@@ -73,7 +82,10 @@ Metode penelitian yang digunakan adalah sebagai beikut:
 - **Evaluasi Model:** Hitung akurasi, precision, recall, dan F1-score berdasarkan data uji.
 - **Interpretasi & Rekomendasi:** Gunakan feature importance untuk mengidentifikasi variabel kunci, serta rumuskan rekomendasi kebijakan berbasis data.
 
-## 📊 Hasil dan Pembahasan
+## Visualisasi
+
+
+## 📊 Hasil dan Interpretasi
 
 Model **XGBoost** menunjukkan performa terbaik dengan akurasi 88% dan macro F1-score sebesar 0.87, serta mampu mengklasifikasikan kelas mayoritas dan minoritas secara seimbang. Model ini sangat andal dalam mendeteksi kategori *Kesejahteraan Sedang* (kelas 1) dengan recall 0.99 dan F1-score tinggi pada semua kelas.
 
@@ -96,10 +108,35 @@ Model **Regresi Logistik** memiliki akurasi dan F1-score terendah (masing-masing
 
 Berdasarkan hasil perbandingan, dapat disimpulkan bahwa **XGBoost** merupakan algoritma yang paling efektif dalam memodelkan klasifikasi tingkat kesejahteraan wilayah berbasis indikator sosial ekonomi. Keunggulan utamanya terletak pada kemampuannya menangani **kompleksitas antar variabel**, **ketidakseimbangan distribusi data**, serta menghasilkan prediksi **multikelas yang presisi dan stabil**.
 
-## ⭕ Kesimpulan
+#### Feature Importance - XGBoost
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/f4bb3b7b-8df7-40e3-a966-04e43d75bc60)
+
+</div>
+
+Gambar di atas menunjukkan bahwa variabel **PPK (Pengeluaran Per Kapita)**, **Akses Air Layak**, dan **Anggaran** merupakan faktor paling berpengaruh dalam menentukan klasifikasi tingkat kesejahteraan wilayah. Hal ini menegaskan pentingnya indikator ekonomi dan akses kebutuhan dasar dalam analisis pembangunan daerah.
+
+
+## ✅ Kesimpulan Utama
+
+- Model XGBoost terbukti paling efektif dalam klasifikasi tingkat kesejahteraan wilayah berdasarkan IPM, dengan akurasi 88% dan macro F1-score 0.87.
+- Variabel paling berpengaruh adalah Pengeluaran Per Kapita (PPK), pekerja informal, dan Indeks Pembangunan Gender (IPG).
+- Alokasi anggaran daerah memiliki pengaruh relatif rendah terhadap klasifikasi IPM.
+- Rekomendasi kebijakan sebaiknya berfokus pada intervensi kualitas, pengurangan dominasi pekerja informal, dan penguatan kesetaraan gender.
+- Pemanfaatan XGBoost dapat mendukung evaluasi pembangunan yang berbasis data dan adaptif terhadap kondisi lokal.
+
+
+
 </div>
 
 ## 📚 Referensi
+
+- Bappenas. (2024). *Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029*. Jakarta: Kementerian PPN/Bappenas.
+- Badan Pusat Statistik (BPS). (2024). *Indeks Pembangunan Manusia Indonesia 2023 & 2024*. [https://bps.go.id](https://bps.go.id)
+- World Bank. (2020). *Indonesia Public Expenditure Review: Spending for Better Results*. Washington, DC.
+
 </div>
 
 
