@@ -242,9 +242,20 @@ Pemetaan ini berguna untuk mengidentifikasi daerah yang memerlukan prioritas int
 - Bappenas. (2024). *Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029*. Jakarta: Kementerian PPN/Bappenas.
 - Badan Pusat Statistik (BPS). (2024). *Indeks Pembangunan Manusia Indonesia 2023 & 2024*. [https://bps.go.id](https://bps.go.id)
 - World Bank. (2020). *Indonesia Public Expenditure Review: Spending for Better Results*. Washington, DC.
+- Avendaño-Valencia, L. D., & Fassois, S. D. (2015). Natural vibration response based damage detection for an operating wind turbine via Random Coefficient Linear Parameter Varying AR modelling. Journal of Physics: Conference Series, 628(1), 273–297. https://doi.org/10.1088/1742-6596/628/1/012073
+- Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 13-17-Augu, 785–794. https://doi.org/10.1145/2939672.2939785
+- Hu, T., & Song, T. (2019). Research on XGboost academic forecasting and analysis modelling. Journal of Physics: Conference Series, 1324(1). https://doi.org/10.1088/1742-6596/1324/1/012091
+- Sun, Y., Wong, A. K. C., & Kamel, M. S. (2009). Classification of imbalanced data: A review. International Journal of Pattern Recognition and Artificial Intelligence, 23(4), 687–719. https://doi.org/10.1142/S0218001409007326
+- Zhou, Z. H., & Feng, J. (2019). Deep forest. National Science Review, 6(1), 74–86. https://doi.org/10.1093/nsr/nwy108 
 
 </div>
 
+**The ImBoost Team:**
+
+- 🧑‍💼 Panji Lokajaya Arifa
+- 🧑‍💼 Desy Endriani
+- 🧑‍💼 Jefita Resti Sari
+- 🧑‍💼 Unique D. Resiloy
 
 
 
