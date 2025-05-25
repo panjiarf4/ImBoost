@@ -82,16 +82,78 @@ Data dan Variabel yang digunakan dalam penelitian ini sebagai berikut.
 - [Satu Data Indonesia](https://satudata.go.id)
 - [Badan Pusat Statistik (BPS)](https://www.bps.go.id)
 
+![Blank diagram](https://github.com/user-attachments/assets/cbaf8017-124a-4e75-8315-1592993dad4e)
+
+Proses ini dimulai dari pengumpulan data sosial-ekonomi dari BPS dan Satu Data Indonesia, lalu dilanjutkan dengan pembersihan dan eksplorasi data. Selanjutnya, dilakukan pemodelan menggunakan algoritma XGBoost untuk mengklasifikasikan wilayah berdasarkan tingkat IPM: rendah, sedang, dan tinggi, serta mengevaluasi pengaruh variabel lain seperti pengeluaran per kapita, kemiskinan, dan anggaran.
+
+Hasilnya menunjukkan bahwa kesejahteraan lebih dipengaruhi oleh kualitas hidup masyarakat seperti daya beli dan kesetaraan gender bukan sekadar besar anggaran. Dari sini, analisis ini memberi manfaat konkret.
+
+Bagi masyarakat, hasil ini membantu mengarahkan program seperti bantuan sosial dan sanitasi ke daerah yang benar-benar membutuhkan. Sementara bagi lembaga pemerintah seperti Bappenas, Kemensos, dan pemerintah daerah, analisis ini menjadi dasar perencanaan kebijakan yang lebih tepat sasaran dan berbasis data.
 
 ## 🔍 Langkah Analisis
 
-- **Pengumpulan Data:** Kumpulkan data sekunder IPM kabupaten/kota beserta variabel pendukung (alokasi anggaran, PDRB, pengeluaran per kapita, kemiskinan, akses air bersih, dll.) dari sumber resmi seperti BPS.
-- **Pra-pemrosesan:** Bersihkan data (atasi nilai hilang dan outlier), lakukan transformasi skala (normalisasi/standarisasi), dan encoding variabel kategorikal.
-- **Penentuan Label Target:** Ubah nilai IPM menjadi kelas (rendah, sedang, tinggi, sangat tinggi) berdasarkan klasifikasi BPS.
-- **Pembagian Data:** Split data menjadi data latih dan uji (misalnya dengan validasi silang k-fold, contoh: 90% latih, 10% uji).
-- **Pelatihan Model (XGBoost):** Bangun model klasifikasi menggunakan XGBoost multiclass. Lakukan tuning hyperparameter menggunakan validasi silang.
-- **Evaluasi Model:** Hitung akurasi, precision, recall, dan F1-score berdasarkan data uji.
-- **Interpretasi & Rekomendasi:** Gunakan feature importance untuk mengidentifikasi variabel kunci, serta rumuskan rekomendasi kebijakan berbasis data.
+#### 1. Pengumpulan Data
+- Data sekunder dikumpulkan dari sumber resmi:
+  - **BPS (Badan Pusat Statistik)**
+  - **Portal Satu Data Indonesia**
+- Variabel yang digunakan meliputi:
+  - IPM, alokasi anggaran, PDRB per kapita, pengeluaran per kapita (PPK), tingkat kemiskinan (PPM), akses air bersih, IPG, IKK, dll.
+
+#### 2. Pra-Pemrosesan Data
+- Tangani *missing values* dan *outlier*
+- Lakukan normalisasi atau transformasi log untuk fitur numerik
+- Encode variabel kategorikal
+- Dataset siap digunakan untuk pelatihan model
+
+#### 3. Penentuan Label Target
+- IPM dikategorikan sesuai standar BPS:
+  - Rendah: `< 60`
+  - Sedang: `60 – <70`
+  - Tinggi: `70 – <80`
+  - Sangat tinggi: `≥ 80`
+
+#### 4. Pembagian Data
+- Data dibagi menggunakan validasi silang:
+  - **10-fold cross-validation**
+  - Rasio: 90% data latih, 10% data uji
+
+#### 5. Pelatihan Model
+
+##### a. XGBoost
+- Objective: `multi:softprob` (multiclass)
+- Tuning:
+  - `n_estimators`, `max_depth`, `learning_rate`, `reg_alpha`, `reg_lambda`
+- Teknik: Grid Search + Cross-Validation
+
+##### b. SVM
+- Kernel: RBF
+- Tuning parameter: `C`, `gamma`
+- Skema klasifikasi: One-vs-Rest (OvR)
+
+##### c. Naive Bayes
+- Model: Gaussian Naive Bayes
+- Asumsi: Distribusi normal antar fitur numerik
+
+##### d. Regresi Logistik
+- Pendekatan: Multiclass (Softmax)
+- Regularisasi: `L2` (ridge)
+- Optimasi loss: `categorical_crossentropy`
+
+#### 6. Evaluasi Model
+- Metrik evaluasi:
+  - **Akurasi**
+  - **Precision**, **Recall**, **F1-score per kelas**
+  - **Confusion matrix**
+- Evaluasi dilakukan pada data latih dan validasi untuk mendeteksi overfitting
+
+#### 7. Interpretasi & Rekomendasi Kebijakan
+- Analisis **feature importance** dari model terbaik (XGBoost)
+- Identifikasi variabel paling berpengaruh terhadap klasifikasi IPM
+- Hasil digunakan sebagai dasar penyusunan:
+  - **Intervensi daerah**
+  - **Distribusi bantuan sosial**
+  - **Kebijakan pembangunan berbasis data**
+
 
 ## 🌟 Eksplorasi Dataset
 
@@ -155,8 +217,8 @@ Gambar di atas menunjukkan bahwa variabel **PPK (Pengeluaran Per Kapita)**, **Ak
 - Model XGBoost terbukti paling efektif dalam klasifikasi tingkat kesejahteraan wilayah berdasarkan IPM, dengan akurasi 88% dan macro F1-score 0.87.
 - Variabel paling berpengaruh adalah Pengeluaran Per Kapita (PPK), pekerja informal, dan Indeks Pembangunan Gender (IPG).
 - Alokasi anggaran daerah memiliki pengaruh relatif rendah terhadap klasifikasi IPM.
-- Rekomendasi kebijakan sebaiknya berfokus pada intervensi kualitas, pengurangan dominasi pekerja informal, dan penguatan kesetaraan gender.
-- Pemanfaatan XGBoost dapat mendukung evaluasi pembangunan yang berbasis data dan adaptif terhadap kondisi lokal.
+-  Pemerintah sebaiknya fokus pada kualitas intervensi, peningkatan daya beli, pengurangan pekerja informal, dan penguatan kesetaraan gender.
+- Pemanfaatan XGBoost dapat membantu mendeteksi wilayah prioritas dan menyusun kebijakan berbasis data yang adaptif dan tepat sasaran.
 
 
 
