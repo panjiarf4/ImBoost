@@ -59,18 +59,22 @@ Metode penelitian yang digunakan adalah sebagai berikut:
 Data dan Variabel yang digunakan dalam penelitian ini sebagai berikut.
 <div align="center">
 
-| No. | Variabel | Deskripsi |
-|-----|----------|-----------|
-| 1.  | **KAB_KOTA** | Nama Kabupaten atau Kota di seluruh Indonesia. |
-| 2.  | **IPM** (*Indeks Pembangunan Manusia*) | Mengukur kualitas hidup berdasarkan umur panjang, kesehatan, pendidikan, dan standar hidup layak. |
-| 3.  | **Anggaran** | Jumlah alokasi anggaran (kemungkinan dari APBD/APBN) dalam satuan rupiah. |
-| 4.  | **IPG** (*Indeks Pembangunan Gender*) | Menggambarkan kesetaraan gender dalam pembangunan manusia. |
-| 5.  | **PKKP** (*Prevalensi Ketidakcukupan Konsumsi Pangan*) | Persentase penduduk yang mengonsumsi pangan kurang dari kebutuhan minimal. |
-| 6.  | **PPM** (*Persentase Penduduk Miskin*) | Penduduk dengan pendapatan di bawah garis kemiskinan. |
-| 7.  | **PPK** (*Pengeluaran Per Kapita*) | Jumlah pengeluaran rata-rata individu. |
-| 8.  | **Air Layak** | Persentase rumah tangga yang mengakses air minum layak. |
-| 9.  | **IKK** (*Indeks Kemahalan Konstruksi*) | Nilai tambah barang/jasa dari konstruksi di suatu wilayah. |
-| 10. | **PDRB** (*Produk Domestik Regional Bruto*) | Nilai tambah barang dan jasa yang dihasilkan di suatu daerah. |
+| No. | Variabel           | Deskripsi                                                                 |
+|-----|--------------------|---------------------------------------------------------------------------|
+| 1.  | **KAB_KOTA**        | Nama Kabupaten atau Kota di seluruh Indonesia.                           |
+| 2.  | **IPM** (*Indeks Pembangunan Manusia*) | Indeks komposit yang mengukur kualitas hidup berdasarkan umur panjang, kesehatan, pendidikan, dan standar hidup layak. |
+| 3.  | **Anggaran**        | Jumlah alokasi anggaran daerah (APBD/APBN) dalam satuan rupiah.          |
+| 4.  | **IPG** (*Indeks Pembangunan Gender*) | Menggambarkan tingkat kesetaraan gender dalam pencapaian pembangunan manusia. |
+| 5.  | **PKKP** (*Prevalensi Ketidakcukupan Konsumsi Pangan*) | Persentase penduduk yang mengonsumsi pangan kurang dari kebutuhan minimum. |
+| 6.  | **PPM** (*Persentase Penduduk Miskin*) | Persentase penduduk yang hidup di bawah garis kemiskinan nasional.           |
+| 7.  | **PPK** (*Pengeluaran Per Kapita*) | Jumlah rata-rata pengeluaran individu dalam rumah tangga per tahun.         |
+| 8.  | **PPK_Makanan**     | Komponen pengeluaran per kapita khusus untuk konsumsi makanan.           |
+| 9.  | **Air_Layak**       | Persentase rumah tangga yang memiliki akses terhadap air minum layak.     |
+| 10. | **IKK** (*Indeks Kemahalan Konstruksi*) | Indeks harga barang dan jasa konstruksi di suatu wilayah.                    |
+| 11. | **PDRB** (*Produk Domestik Regional Bruto*) | Nilai tambah seluruh barang dan jasa yang dihasilkan di suatu daerah.        |
+| 12. | **IKKe** (*Indeks Kemahalan Konsumsi*) | Indeks harga konsumsi barang dan jasa yang dibutuhkan masyarakat.            |
+| 13. | **Bekerja_Informal** | Persentase penduduk usia kerja yang bekerja di sektor informal.           |
+| 14. | **Bekerja_Formal**   | Persentase penduduk usia kerja yang bekerja di sektor formal.             |
 
 </div>
 
