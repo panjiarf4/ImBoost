@@ -211,6 +211,19 @@ Berdasarkan hasil perbandingan, dapat disimpulkan bahwa **XGBoost** merupakan al
 
 Gambar di atas menunjukkan bahwa variabel **PPK (Pengeluaran Per Kapita)**, **Akses Air Layak**, dan **Anggaran** merupakan faktor paling berpengaruh dalam menentukan klasifikasi tingkat kesejahteraan wilayah. Hal ini menegaskan pentingnya indikator ekonomi dan akses kebutuhan dasar dalam analisis pembangunan daerah.
 
+#### Pemetaan Kesejahteraan Masyarakat
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cce4e6b2-4d45-4ba2-aa69-e13d6fbdf88a" alt="Peta Kesejahteraan Masyarakat" width="750"/>
+</p>
+
+Peta di atas menunjukkan hasil klasifikasi kesejahteraan masyarakat di seluruh kabupaten/kota Indonesia berdasarkan model XGBoost. Warna hijau muda merepresentasikan daerah dengan tingkat kesejahteraan **rendah**, hijau sedang untuk **sedang**, dan abu-abu untuk **tinggi**.
+
+Sebagian besar wilayah di Indonesia tergolong dalam kategori kesejahteraan **rendah**, terutama di kawasan Indonesia Tengah dan Timur. Sementara itu, beberapa kabupaten/kota di Papua dan Maluku menunjukkan kemajuan signifikan dengan masuk dalam kategori **sedang**, meskipun masih terdapat tantangan besar dalam pemerataan pembangunan.
+
+Pemetaan ini berguna untuk mengidentifikasi daerah yang memerlukan prioritas intervensi kebijakan berbasis data, serta sebagai alat bantu visual bagi pengambilan keputusan pemerintah dalam merumuskan strategi pembangunan yang lebih terarah.
+
+
 
 ## ✅ Kesimpulan Utama
 
