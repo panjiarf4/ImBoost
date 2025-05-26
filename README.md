@@ -250,12 +250,12 @@ Pemetaan ini berguna untuk mengidentifikasi daerah yang memerlukan prioritas int
 
 </div>
 
-**The ImBoost Team:**
+## 👨‍👨‍👦‍👦 The ImBoost Team
 
-- 🧑‍💼 Panji Lokajaya Arifa
-- 🧑‍💼 Desy Endriani
-- 🧑‍💼 Jefita Resti Sari
-- 🧑‍💼 Unique D. Resiloy
+- 🙎‍♂️ Panji Lokajaya Arifa
+- 🙍🏻‍♀️ Desy Endriani
+- 🙍🏻‍♀️ Jefita Resti Sari
+- 🙍🏻‍♀️ Unique D. Resiloy
 
 
 
